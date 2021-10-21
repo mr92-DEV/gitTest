@@ -11,7 +11,8 @@ cur = conn.cursor()
 
 #print headers and attributes class description
 cur.execute("PRAGMA table_info(Gases)")
-print cur.fetchall()
+head = cur.fetchall() 
+print (head)
 
 #execute table query
 table = cur.execute('SELECT * from Gases')
